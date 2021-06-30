@@ -25,7 +25,6 @@ const countryData = useSelector(state=> state.countryData)
     const fetcher = async () => {
       data = await apiCall(AllAPI);
       setGlobalData(data);
-      console.log(data.data)
     };
     fetcher();
   }, []);
@@ -39,9 +38,9 @@ const countryData = useSelector(state=> state.countryData)
           <div className={styles.logo}>
             <img src={logo} alt='Logo' />
           </div>
-          { country == 'Global' ? <Cards data={globalData.data}/> : <Cards data={countryData}/> }
+          { country === 'Global' ? <Cards data={globalData.data}/> : <Cards data={countryData}/> }
           <CountryPicker/>
-          {country == 'Global' ? <GlobalChart/> : <CountryChart/>}
+          {country === 'Global' ? <GlobalChart/> : <CountryChart/>}
 
         </div>
       </div>

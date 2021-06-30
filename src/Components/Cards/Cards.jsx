@@ -1,21 +1,13 @@
 import React from 'react';
 import styles from './Cards.module.css';
-import { Card } from '../index'
-import { useSelector } from 'react-redux';
+import {Card} from '../index'
+
 
 
 export default function Cards({ data }) {
-    const country = useSelector(state=> state.currentCountry)
-const countryData = useSelector(state=> state.countryData)
-
-    //  Getting the Last update
-    // if(country == 'Global'){
-    //     const lastUpdated = data ? data.lastUpdate : ''
-    // } else {
-    //     const lastUpdated = data ? data.lastUpdate : ''
-    // }
+   
+    //  Getting the Last update Date
     const lastUpdated = data ? data.lastUpdate : ''
-    console.log(lastUpdated)
     // <----->
 
 
@@ -23,10 +15,10 @@ const countryData = useSelector(state=> state.countryData)
     const cardData = data ? [
         [
             data.confirmed.value,
-            'Active Cases'
+            'Active'
         ], [
             data.recovered.value,
-            'Recovered Cases'
+            'Recovered'
         ], [
             data.deaths.value,
             'Deaths'

@@ -7,7 +7,6 @@ const allReducer = combineReducers({
     countryData
 })
 let store = createStore(allReducer);
-store.subscribe(()=> console.log(store.getState()))
 
 
 export default store

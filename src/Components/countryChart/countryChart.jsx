@@ -18,7 +18,6 @@ export default function CountryChart() {
 
   // Data from Redux store
   const country = useSelector((state)=>state.currentCountry)
-  const allData = useSelector(state=>state.countryData)
   // <---->
   
   
@@ -36,7 +35,6 @@ export default function CountryChart() {
           deaths: countryData.data.deaths,
           lastUpdate: countryData.data.lastUpdate
         }))
-        console.log(allData.lastUpdate)
       };
       fetcher();
     }
