@@ -1,0 +1,79 @@
+.card{
+    width: 25%;
+    text-align: start;
+    padding: 10px 15px 40px 15px;    
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card:nth-child(1):after{
+    content: '';
+    position: absolute;
+    width: 101%;
+    height: 5px;
+    background-color: #7D44D0 ;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.card:nth-child(2):after{
+    content: '';
+    position: absolute;
+    width: 102%;
+    height: 5px;
+    background-color: #47EA6E  ;
+    bottom: 0;
+    left: -5px;
+    border-radius: 5px;
+}
+.card:nth-child(3):after{
+    content: '';
+    position: absolute;
+    width: 101%;
+    height: 5px;
+    background-color: #F64C4C  ;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.card span{
+    display: block;
+    font-weight: 500;
+}
+.card span:first-child {
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(105, 103, 103);
+    font-weight: 400;
+}
+.card span.number{
+    font-weight: 600;
+    font-size: 20px;
+}
+.card span.date{
+    font-size: 14px;
+    color: rgb(105, 103, 103);
+    font-weight: 400;
+}
+.card span.cases{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+@media only screen and(max-width:700px){
+    .card{
+    width: 84%;
+    text-align: center;
+    padding: 10px 15px 40px 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+    }
+}

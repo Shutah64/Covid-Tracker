@@ -1,0 +1,17 @@
+.input{
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    max-width: 400px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 20px;
+    transition: all 200ms ease-in-out;
+}
+.input:focus{
+    border: none;
+    border-bottom: 1px solid rgb(0, 132, 255);
+    outline: none;
+
+}

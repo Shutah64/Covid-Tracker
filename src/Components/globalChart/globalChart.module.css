@@ -1,0 +1,8 @@
+.chart{
+    max-height: 350px !important;
+    width: 937px !important;
+    margin: 0 auto;
+}
+.chartWrapper{
+    padding-top:10px;
+}
